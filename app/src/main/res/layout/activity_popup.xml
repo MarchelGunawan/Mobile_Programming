@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popbg"
+    tools:context=".Popup"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="50">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Your Team"
+            android:textSize="20dp"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="How many Melle :"
+            android:textSize="32dp"></TextView>
+        <EditText
+            android:id="@+id/edittextmelle1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"></EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="How many Range :"
+            android:textSize="32dp"></TextView>
+        <EditText
+            android:id="@+id/edittexrange1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="50">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Enemy Team"
+            android:textSize="20dp"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="How many Melle :"
+            android:textSize="32dp"></TextView>
+        <EditText
+            android:id="@+id/edittextmelle2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"></EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="How many Range :"
+            android:textSize="32dp"></TextView>
+        <EditText
+            android:id="@+id/edittexrange2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"></EditText>
+        <Button
+            android:id="@+id/btnstart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="Start The Game"
+            android:onClick="start"></Button>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="list"
+            android:layout_weight="3"></Button>
+        
+        <TextView
+            android:id="@+id/hdr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:textSize="48sp"
+            android:text="histery"></TextView>
+
+        <Button
+            android:id="@+id/btnplay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Play"
+            android:layout_weight="3"
+            android:onClick="play"></Button>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight = "23"
+        android:columnCount="3">
+
+        <TextView
+            android:id="@+id/m0"
+            android:background="#3300FF00"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="S1"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/m1"
+            android:background="#AA00FF00"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="S2"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/m2"
+            android:background="#3300FF00"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="S3"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/m3"
+            android:background="#3300FFFF"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="M1"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/m4"
+            android:background="#AA00FFFF"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="M2"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/m5"
+            android:background="#3300FFFF"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="M3"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/m6"
+            android:background="#3300FF00"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="T1"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/m7"
+            android:background="#AA00FF00"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="T2"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/m8"
+            android:background="#3300FF00"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="T3"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/white"
+            android:background="@color/white"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="3"
+            android:layout_height="95dp"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="30dp"></TextView>
+
+        <TextView
+            android:id="@+id/m9"
+            android:background="#3300FFFF"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="T1"
+            android:gravity="center"
+            android:onClick="teamTroops"></TextView>
+
+        <TextView
+            android:id="@+id/m10"
+            android:background="#AA00FFFF"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="T2"
+            android:gravity="center"
+            android:onClick="teamTroops"></TextView>
+
+        <TextView
+            android:id="@+id/m11"
+            android:background="#3300FFFF"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="T3"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/m12"
+            android:background="#3300FF00"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="M1"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/m13"
+            android:background="#AA00FF00"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="M2"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/m14"
+            android:background="#3300FF00"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="M3"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/m15"
+            android:background="#3300FFFF"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="S1"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/m16"
+            android:background="#AA00FFFF"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="S2"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/m17"
+            android:background="#3300FFFF"
+            android:layout_columnWeight="1"
+            android:layout_height="80dp"
+            android:text="S3"
+            android:gravity="center"></TextView>
+
+    </GridLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <EditText
+            android:id="@+id/EditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"></EditText>
+        
+        <Button
+            android:id="@+id/btnsend"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Send"></Button>
+    </LinearLayout>
+
+</LinearLayout>

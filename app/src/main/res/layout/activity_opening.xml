@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Opening"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <GridLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:columnCount="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Your Range Troops:"></TextView>
+
+            <EditText
+                android:id="@+id/teamrangetroops"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="2"
+                android:inputType="number"></EditText>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Your Melee Troops:"></TextView>
+
+            <EditText
+                android:id="@+id/teammeleetroops"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="2"
+                android:inputType="number"></EditText>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Enemy Range Troops:"></TextView>
+
+            <EditText
+                android:id="@+id/enemyrangetroops"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="2"
+                android:inputType="number"></EditText>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Enemy Melee Troops:"></TextView>
+
+            <EditText
+                android:id="@+id/enemymeleetroops"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="2"
+                android:inputType="number"></EditText>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/rvr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rvr"
+            android:layout_weight="3"
+            android:onClick="rvrclicked"></Button>
+
+        <Button
+            android:id="@+id/rvm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rvm"
+            android:layout_weight="3"
+            android:onClick="rvmclicked"></Button>
+
+        <Button
+            android:id="@+id/mvr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mvr"
+            android:layout_weight="3"
+            android:onClick="mvrclicked"></Button>
+
+        <Button
+            android:id="@+id/mvm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mvm"
+            android:layout_weight="3"
+            android:onClick="mvmclicked"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Your Troops left:"
+            android:layout_weight="2"></TextView>
+        <TextView
+            android:id="@+id/teamtroopsleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="0"
+            android:layout_weight="2"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Enemy Troops left:"
+            android:layout_weight="2"></TextView>
+        <TextView
+            android:id="@+id/enemytroopsleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="0"
+            android:layout_weight="2"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Your Range Troops left:"
+            android:layout_weight="2"></TextView>
+        <TextView
+            android:id="@+id/teamrangeleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="0"
+            android:layout_weight="2"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Enemy Range Troops left:"
+            android:layout_weight="2"></TextView>
+        <TextView
+            android:id="@+id/enemyrangeleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="0"
+            android:layout_weight="2"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Your Melee Troops left:"
+            android:layout_weight="2"></TextView>
+        <TextView
+            android:id="@+id/teammeleeleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="0"
+            android:layout_weight="2"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Enemy Melee Troops left:"
+            android:layout_weight="2"></TextView>
+        <TextView
+            android:id="@+id/enemymeleeleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="0"
+            android:layout_weight="2"></TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Round 1"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        android:layout_weight="3"></TextView>
+
+    <Button
+        android:id="@+id/playthegame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="play"
+        android:onClick="playgame"></Button>
+
+</LinearLayout>
