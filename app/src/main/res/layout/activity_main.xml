@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/silhouette_historical_battlefield_sunset_design_military_silhouettes_fighting_scene_knight_war_landscape_background_medieval_138777890"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -116,7 +117,6 @@
 
         <TextView
             android:id="@+id/white"
-            android:background="@color/white"
             android:layout_columnWeight="1"
             android:layout_columnSpan="3"
             android:layout_height="95dp"
