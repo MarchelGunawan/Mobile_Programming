@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Histery">
         <activity
-            android:name=".MainActivity"
+            android:name=".Opening"
             android:exported="false" />
         <activity
             android:name=".TroopsPopUp"
             android:theme="@style/AppTheme.PopMe" />
         <activity
-            android:name=".Opening"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

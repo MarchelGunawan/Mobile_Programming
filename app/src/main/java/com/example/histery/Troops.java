@@ -4,7 +4,8 @@ public class Troops {
     private int health;
     private int atk;
     private int def;
-
+    private int meleeTroops = 30;
+    private int rangeTroops = 40;
     Troops(int health, int atk, int def){
         this.health = health;
         this.atk = atk;
@@ -33,5 +34,13 @@ public class Troops {
 
     public int getDef() {
         return def;
+    }
+
+    public int getMeleeTroops(){
+        return meleeTroops;
+    }
+
+    public int getRangeTroops() {
+        return rangeTroops;
     }
 }

@@ -4,15 +4,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
 
 public class TroopsPopUp extends Activity {
-    int melle_count;
-    int range_count;
+    String melee_count = "20";
+    String range_count = "30";
+    private SharedPreferences sp;
+    private SharedPreferences.Editor edt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,13 +40,10 @@ public class TroopsPopUp extends Activity {
         params.y = -20;
 
         getWindow().setAttributes(params);
+
+        sp = PreferenceManager.getDefaultSharedPreferences(this);
+        edt = sp.edit();
     }
 
-    public void melleTroops(View v){
-        melle_count = 1;
-        Intent i = new Intent();
-        i.putExtra("mellecount", melle_count);
-        setResult(RESULT_OK,i);
-        finish();
-    }
+
 }
