@@ -4,12 +4,14 @@ public class Troops {
     private int health;
     private int atk;
     private int def;
-    private int meleeTroops = 30;
-    private int rangeTroops = 40;
+    private int meleeTroops;
+    private int rangeTroops;
     Troops(int health, int atk, int def){
         this.health = health;
         this.atk = atk;
         this.def = def;
+        this.meleeTroops = 30;
+        this.rangeTroops = 20;
     }
 
     public void setHealth(int health) {
@@ -23,6 +25,7 @@ public class Troops {
     public void setDef(int def) {
         this.def = def;
     }
+
 
     public int getHealth() {
         return health;
@@ -43,4 +46,6 @@ public class Troops {
     public int getRangeTroops() {
         return rangeTroops;
     }
+
+
 }
