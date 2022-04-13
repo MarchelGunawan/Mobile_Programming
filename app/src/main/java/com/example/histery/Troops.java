@@ -26,6 +26,13 @@ public class Troops {
         this.def = def;
     }
 
+    public void setRangeTroops(int rangeTroops) {
+        this.rangeTroops = rangeTroops;
+    }
+
+    public void setMeleeTroops(int meleeTroops) {
+        this.meleeTroops = meleeTroops;
+    }
 
     public int getHealth() {
         return health;
