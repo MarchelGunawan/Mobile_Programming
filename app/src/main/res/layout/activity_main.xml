@@ -18,7 +18,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="attack"
-            android:layout_weight="3"></Button>
+            android:layout_weight="3"/>
         
         <TextView
             android:id="@+id/hdr"
@@ -27,7 +27,7 @@
             android:layout_weight="6"
             android:gravity="center"
             android:textSize="48sp"
-            android:text="histery"></TextView>
+            android:text="histery"/>
 
         <Button
             android:id="@+id/btnplay"
@@ -35,7 +35,7 @@
             android:layout_height="match_parent"
             android:text="Play"
             android:layout_weight="3"
-            android:onClick="play"></Button>
+            android:onClick="play"/>
     </LinearLayout>
     <GridLayout
         android:id="@+id/gl"
@@ -51,7 +51,7 @@
             android:layout_height="80dp"
             android:text="S1"
             android:gravity="center"
-            android:onClick="enemyTroops"></TextView>
+            android:onClick="enemyTroops"/>
 
         <TextView
             android:id="@+id/m1"
@@ -60,7 +60,7 @@
             android:layout_height="80dp"
             android:text="S2"
             android:gravity="center"
-            android:onClick="enemyTroops"></TextView>
+            android:onClick="enemyTroops"/>
 
         <TextView
             android:id="@+id/m2"
@@ -69,7 +69,7 @@
             android:layout_height="80dp"
             android:text="S3"
             android:gravity="center"
-            android:onClick="enemyTroops"></TextView>
+            android:onClick="enemyTroops"/>
 
         <TextView
             android:id="@+id/m3"
@@ -78,7 +78,7 @@
             android:layout_height="80dp"
             android:text="M1"
             android:gravity="center"
-            android:onClick="enemyTroops"></TextView>
+            android:onClick="enemyTroops"/>
 
         <TextView
             android:id="@+id/m4"
@@ -87,7 +87,7 @@
             android:layout_height="80dp"
             android:text="M2"
             android:gravity="center"
-            android:onClick="enemyTroops"></TextView>
+            android:onClick="enemyTroops"/>
 
         <TextView
             android:id="@+id/m5"
@@ -96,7 +96,7 @@
             android:layout_height="80dp"
             android:text="M3"
             android:gravity="center"
-            android:onClick="enemyTroops"></TextView>
+            android:onClick="enemyTroops"/>
 
         <TextView
             android:id="@+id/m6"
@@ -105,7 +105,7 @@
             android:layout_height="80dp"
             android:text="T1"
             android:gravity="center"
-            android:onClick="enemyTroops"></TextView>
+            android:onClick="enemyTroops"/>
 
         <TextView
             android:id="@+id/m7"
@@ -114,7 +114,7 @@
             android:layout_height="80dp"
             android:text="T2"
             android:gravity="center"
-            android:onClick="enemyTroops"></TextView>
+            android:onClick="enemyTroops"/>
 
         <TextView
             android:id="@+id/m8"
@@ -123,7 +123,7 @@
             android:layout_height="80dp"
             android:text="T3"
             android:gravity="center"
-            android:onClick="enemyTroops"></TextView>
+            android:onClick="enemyTroops"/>
 
         <TextView
             android:id="@+id/white"
@@ -132,7 +132,7 @@
             android:layout_height="95dp"
             android:text="0"
             android:gravity="center"
-            android:textSize="30dp"></TextView>
+            android:textSize="30dp"/>
 
 
     </GridLayout>
@@ -151,7 +151,7 @@
             android:layout_height="80dp"
             android:text="T1"
             android:gravity="center"
-            android:onClick="teamTroops"></TextView>
+            android:onClick="teamTroops"/>
 
         <TextView
             android:id="@+id/m10"
@@ -160,7 +160,7 @@
             android:layout_height="80dp"
             android:text="T2"
             android:gravity="center"
-            android:onClick="teamTroops"></TextView>
+            android:onClick="teamTroops"/>
 
         <TextView
             android:id="@+id/m11"
@@ -169,7 +169,7 @@
             android:layout_height="80dp"
             android:text="T3"
             android:gravity="center"
-            android:onClick="teamTroops"></TextView>
+            android:onClick="teamTroops"/>
 
         <TextView
             android:id="@+id/m12"
@@ -178,7 +178,7 @@
             android:layout_height="80dp"
             android:text="M1"
             android:gravity="center"
-            android:onClick="teamTroops"></TextView>
+            android:onClick="teamTroops"/>
 
         <TextView
             android:id="@+id/m13"
@@ -187,7 +187,7 @@
             android:layout_height="80dp"
             android:text="M2"
             android:gravity="center"
-            android:onClick="teamTroops"></TextView>
+            android:onClick="teamTroops"/>
 
         <TextView
             android:id="@+id/m14"
@@ -196,7 +196,7 @@
             android:layout_height="80dp"
             android:text="M3"
             android:gravity="center"
-            android:onClick="teamTroops"></TextView>
+            android:onClick="teamTroops"/>
 
         <TextView
             android:id="@+id/m15"
@@ -205,7 +205,7 @@
             android:layout_height="80dp"
             android:text="S1"
             android:gravity="center"
-            android:onClick="teamTroops"></TextView>
+            android:onClick="teamTroops"/>
 
         <TextView
             android:id="@+id/m16"
@@ -214,7 +214,7 @@
             android:layout_height="80dp"
             android:text="S2"
             android:gravity="center"
-            android:onClick="teamTroops"></TextView>
+            android:onClick="teamTroops"/>
 
         <TextView
             android:id="@+id/m17"
@@ -223,7 +223,7 @@
             android:layout_height="80dp"
             android:text="S3"
             android:gravity="center"
-            android:onClick="teamTroops"></TextView>
+            android:onClick="teamTroops"/>
 
     </GridLayout>
 
@@ -236,14 +236,14 @@
             android:id="@+id/EditText"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="9"></EditText>
+            android:layout_weight="9"/>
         
         <Button
             android:id="@+id/btnsend"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
-            android:text="Send"></Button>
+            android:text="Send"/>
     </LinearLayout>
 
 </LinearLayout>

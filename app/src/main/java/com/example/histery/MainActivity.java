@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn, btnatk;
     TextView em0, em1, em2, em3, em4, em5, em6, em7, em8, tm9, tm10, tm11, tm12, tm13, tm14, tm15, tm16, tm17;
     TextView test;
+    TextView player1, player2;
     GridLayout gl, gl2;
     int i = 0;
     int round = 1;
@@ -34,9 +36,8 @@ public class MainActivity extends AppCompatActivity {
     Troops tmt = new Troops(70,45,75);
     Troops trt = new Troops(45,90,30);
     String p1t, p2t;
-    int chkbox[];
-    boolean chkp1, chkp2;
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,43 +74,34 @@ public class MainActivity extends AppCompatActivity {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 int x = (int)motionEvent.getX();
                 int y = (int)motionEvent.getY();
-                    if((x >= 0 && y >= 0) && (x <= 473 && y >= 0) && (x <= 473 && y <= 272) && (x >= 0 && y <= 272)){
-                        p2t = check;
-                        chkp2 = true;
-                        chkbox[0] = 1;
-                    }else if((x >= 473 && y >= 0) && (x <= 954 && y >= 0) && (x <= 954 && y <= 272) && (x >= 473 && y <= 272)){
-                        p2t = check2;
-                        chkp2 = true;
-                        chkbox[1] = 1;
-                    }else if((x >= 954 && y >= 0) && (x <= 1431 && y >= 0) && (x <= 1431 && y <= 272) && (x >= 954 && y <= 272)){
-                        p2t = check3;
-                        chkp2 = true;
-                        chkbox[2] = 1;
-                    }else if((x >= 0 && y >= 272) && (x <= 473 && y >= 272) && (x <= 473 && y <= 557) && (x >= 0 && y <= 557)){
-                        p2t = check4;
-                        chkp2 = true;
-                        chkbox[3] = 1;
-                    }else if((x >= 473 && y >= 272) && (x <= 954 && y >= 272) && (x <= 954 && y <= 557) && (x >= 473 && y <= 557)){
-                        p2t = check5;
-                        chkp2 = true;
-                        chkbox[4] = 1;
-                    }else if((x >= 954 && y >= 272) && (x <= 1431 && y >= 272) && (x <= 1431 && y <= 557) && (x >= 954 && y <= 557)){
-                        p2t = check;
-                        chkp2 = true;
-                        chkbox[5] = 1;
-                    }else if((x >= 0 && y >= 557) && (x <= 473 && y >= 557) && (x <= 473 && y <= 835) && (x >= 0 && y <= 853)){
-                        p2t = check6;
-                        chkp2 = true;
-                        chkbox[6] = 1;
-                    }else if((x >= 473 && y >= 557) && (x <= 954 && y >= 557) && (x <= 954 && y <= 835) && (x >= 473 && y <= 853)){
-                        p2t = check7;
-                        chkp2 = true;
-                        chkbox[7] = 1;
-                    }else if((x >= 954 && y >= 557) && (x <= 1431 && y >= 557) && (x <= 1431 && y <= 835) && (x >= 954 && y <= 853)){
-                        p2t = check8;
-                        chkp2 = true;
-                        chkbox[8] = 1;
-                    }
+                if((x >= 0 && y >= 0) && (x <= 473 && y >= 0) && (x <= 473 && y <= 272) && (x >= 0 && y <= 272)){
+                    p2t = check;
+                    player2 = findViewById(R.id.m0);
+                }else if((x >= 473 && y >= 0) && (x <= 954 && y >= 0) && (x <= 954 && y <= 272) && (x >= 473 && y <= 272)){
+                    p2t = check2;
+                    player2 = findViewById(R.id.m1);
+                }else if((x >= 954 && y >= 0) && (x <= 1431 && y >= 0) && (x <= 1431 && y <= 272) && (x >= 954 && y <= 272)){
+                    p2t = check3;
+                    player2 = findViewById(R.id.m2);
+                }else if((x >= 0 && y >= 272) && (x <= 473 && y >= 272) && (x <= 473 && y <= 557) && (x >= 0 && y <= 557)){
+                    p2t = check4;
+                    player2 = findViewById(R.id.m3);
+                }else if((x >= 473 && y >= 272) && (x <= 954 && y >= 272) && (x <= 954 && y <= 557) && (x >= 473 && y <= 557)){
+                    p2t = check5;
+                    player2 = findViewById(R.id.m4);
+                }else if((x >= 954 && y >= 272) && (x <= 1431 && y >= 272) && (x <= 1431 && y <= 557) && (x >= 954 && y <= 557)){
+                    p2t = check6;
+                    player2 = findViewById(R.id.m5);
+                }else if((x >= 0 && y >= 557) && (x <= 473 && y >= 557) && (x <= 473 && y <= 835) && (x >= 0 && y <= 853)){
+                    p2t = check7;
+                    player2 = findViewById(R.id.m6);
+                }else if((x >= 473 && y >= 557) && (x <= 954 && y >= 557) && (x <= 954 && y <= 835) && (x >= 473 && y <= 853)){
+                    p2t = check8;
+                    player2 = findViewById(R.id.m7);
+                }else if((x >= 954 && y >= 557) && (x <= 1431 && y >= 557) && (x <= 1431 && y <= 835) && (x >= 954 && y <= 853)){
+                    p2t = check9;
+                    player2 = findViewById(R.id.m8);
+                }
                 return true;
             }
         });
@@ -121,71 +113,90 @@ public class MainActivity extends AppCompatActivity {
                 int y = (int)motionEvent.getY();
                 if((x >= 0 && y >= 0) && (x <= 473 && y >= 0) && (x <= 473 && y <= 272) && (x >= 0 && y <= 272)){
                     p1t = check10;
-                    chkp1 = true;
+                    player1 = findViewById(R.id.m9);
                 }else if((x >= 473 && y >= 0) && (x <= 954 && y >= 0) && (x <= 954 && y <= 272) && (x >= 473 && y <= 272)){
                     p1t = check11;
-                    chkp1 = true;
+                    player1 = findViewById(R.id.m10);
                 }else if((x >= 954 && y >= 0) && (x <= 1431 && y >= 0) && (x <= 1431 && y <= 272) && (x >= 954 && y <= 272)){
                     p1t = check12;
-                    chkp1 = true;
+                    player1 = findViewById(R.id.m11);
                 }else if((x >= 0 && y >= 272) && (x <= 473 && y >= 272) && (x <= 473 && y <= 557) && (x >= 0 && y <= 557)){
                     p1t = check13;
-                    chkp1 = true;
+                    player1 = findViewById(R.id.m12);
                 }else if((x >= 473 && y >= 272) && (x <= 954 && y >= 272) && (x <= 954 && y <= 557) && (x >= 473 && y <= 557)){
                     p1t = check14;
-                    chkp1 = true;
+                    player1 = findViewById(R.id.m13);
                 }else if((x >= 954 && y >= 272) && (x <= 1431 && y >= 272) && (x <= 1431 && y <= 557) && (x >= 954 && y <= 557)){
                     p1t = check15;
-                    chkp1 = true;
+                    player1 = findViewById(R.id.m14);
                 }else if((x >= 0 && y >= 557) && (x <= 473 && y >= 557) && (x <= 473 && y <= 835) && (x >= 0 && y <= 853)){
                     p1t = check16;
-                    chkp1 = true;
+                    player1 = findViewById(R.id.m15);
                 }else if((x >= 473 && y >= 557) && (x <= 954 && y >= 557) && (x <= 954 && y <= 835) && (x >= 473 && y <= 853)){
                     p1t = check17;
-                    chkp1 = true;
+                    player1 = findViewById(R.id.m16);
                 }else if((x >= 954 && y >= 557) && (x <= 1431 && y >= 557) && (x <= 1431 && y <= 835) && (x >= 954 && y <= 853)){
                     p1t = check18;
-                    chkp1 = true;
+                    player1 = findViewById(R.id.m17);
                 }
                 return true;
             }
         });
 
         btnatk.setOnClickListener(new View.OnClickListener() {
+            /* after the player click the troops player need to click the
+            button attack for lauch the attack and how to know which one
+            attacking by set the round if round odd number so player 1 attacking
+            but if round even number so player 2 attacking
+            */
             @Override
             public void onClick(View view) {
-                atkTroops(p1t, p2t, chkp1, chkp2, round);
+                if(round % 2 != 0){ // player 1 round
+                    if(p1t.equals("Melee")) { // if player 1 troops melee
+                        if (p2t.equals("Melee")) {
+                            int resultatk = Math.round((float)((tmt.getAtk()*tmt.getMeleeTroops()) - (tmt.getDef()*tmt.getMeleeTroops())) / tmt.getHealth());
+                            Toast.makeText(getApplicationContext(), "Troops Left:"+resultatk, Toast.LENGTH_SHORT).show();
+                            round++;
+                            player2.setText("M#45#75#70#"+resultatk);
+                        }else{ // here if the enemy troops range
+                            int resultatk = Math.round((float)((tmt.getAtk()*tmt.getMeleeTroops()) - (trt.getDef()*trt.getMeleeTroops())) / trt.getHealth());
+                            Toast.makeText(getApplicationContext(), "Troops Left:"+resultatk, Toast.LENGTH_SHORT).show();
+                            round++;
+                            player2.setText("R#90#30#45#"+resultatk);
+                        }
+
+                    }else{ // if player 1 troops range
+                        if (p2t.equals("Melee")) { // if the enemy troops melee
+                            int resultatk = Math.round((float)((trt.getAtk()*trt.getMeleeTroops()) - (tmt.getDef()*tmt.getMeleeTroops())) / tmt.getHealth());
+                            Toast.makeText(getApplicationContext(), "Troops Left:"+resultatk, Toast.LENGTH_SHORT).show();
+                            round++;
+                            player2.setText("M#45#75#70#"+resultatk);
+                        }else{ // here if the enemy troops range
+                            int resultatk = Math.round((float)((trt.getAtk()*trt.getMeleeTroops()) - (trt.getDef()*trt.getMeleeTroops())) / trt.getHealth());
+                            Toast.makeText(getApplicationContext(), "Troops Left:"+resultatk, Toast.LENGTH_SHORT).show();
+                            round++;
+                            player2.setText("R#90#30#45#"+resultatk);
+                        }
+                    }
+                }else{ // enemy round
+                    if(p2t.equals("Melee")) {
+                        if (p1t.equals("Melee")) {
+
+                        }else{ // here if the player 1 troops range
+
+                        }
+
+                    }else{
+                        if (p1t.equals("Melee")) {
+
+                        }else{ // here if the player 1 troops range
+
+                        }
+                    }
+                }
             }
         });
 
-    }
-
-    public void atkTroops(String p1, String p2, boolean a, boolean b, int round){
-        /* before start need to decide which player attack by see the round
-        * if round odd number so player one attack but if round even number
-        * player two will attack
-        * */
-        if(round % 2 != 0){ // for player one attack
-            if(p1 == "Melee"){ // if player one attack with Melee Troops
-                if(p2 == "Melee"){ // if player two defend with Melee Troops
-
-                }else{ // if player two defend with Range Troops
-
-                }
-            }else{ // if player one attack with Range Troops
-
-            }
-        }else{ // for player two attack
-            if(p2 == "Melee"){ // if player two attack with Melee Troops
-                if(p1 == "Melee"){ // if player one defend with Melee Troops
-
-                }else{ // if player one defend with Range Troops
-
-                }
-            }else{ // if player two attack with Range Troops
-
-            }
-        }
     }
 
     public void enableTeam(){
