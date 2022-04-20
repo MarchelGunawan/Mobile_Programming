@@ -181,16 +181,28 @@ public class MainActivity extends AppCompatActivity {
                 }else{ // enemy round
                     if(p2t.equals("Melee")) {
                         if (p1t.equals("Melee")) {
-
+                            int resultatk = Math.round((float)((tmt.getAtk()*tmt.getMeleeTroops()) - (tmt.getDef()*tmt.getMeleeTroops())) / tmt.getHealth());
+                            Toast.makeText(getApplicationContext(), "Troops Left:"+resultatk, Toast.LENGTH_SHORT).show();
+                            round++;
+                            player1.setText("M#45#75#70#"+resultatk);
                         }else{ // here if the player 1 troops range
-
+                            int resultatk = Math.round((float)((tmt.getAtk()*tmt.getMeleeTroops()) - (trt.getDef()*trt.getMeleeTroops())) / trt.getHealth());
+                            Toast.makeText(getApplicationContext(), "Troops Left:"+resultatk, Toast.LENGTH_SHORT).show();
+                            round++;
+                            player1.setText("R#90#30#45#"+resultatk);
                         }
 
                     }else{
                         if (p1t.equals("Melee")) {
-
+                            int resultatk = Math.round((float)((trt.getAtk()*trt.getMeleeTroops()) - (tmt.getDef()*tmt.getMeleeTroops())) / tmt.getHealth());
+                            Toast.makeText(getApplicationContext(), "Troops Left:"+resultatk, Toast.LENGTH_SHORT).show();
+                            round++;
+                            player1.setText("M#45#75#70#"+resultatk);
                         }else{ // here if the player 1 troops range
-
+                            int resultatk = Math.round((float)((trt.getAtk()*trt.getMeleeTroops()) - (trt.getDef()*trt.getMeleeTroops())) / trt.getHealth());
+                            Toast.makeText(getApplicationContext(), "Troops Left:"+resultatk, Toast.LENGTH_SHORT).show();
+                            round++;
+                            player1.setText("R#90#30#45#"+resultatk);
                         }
                     }
                 }
